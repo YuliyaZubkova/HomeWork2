@@ -11,4 +11,3 @@ Console.Write(numberOne+" -> ");
 if (numberOne % 7 == 0 && numberOne % 23 == 0)
     Console.WriteLine("да");
 else Console.WriteLine("нет");
-
