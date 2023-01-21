@@ -5,12 +5,9 @@ int number = rnd.Next(100, 1000); //[100, 1000]
 int firstDigit = number / 100;
 int secondDigit = number % 10;
 
-Console.WriteLine(firstDigit, secondDigit);
+Console.Write(firstDigit);
+Console.Write(secondDigit);
 
 
-/* if(firstDigit > secondDigit)
-        Console.WriteLine($"Число {firstDigit} больше чем {secondDigit}");
-else if (secondDigit > firstDigit)
-        Console.WriteLine($"Число {secondDigit} больше чем {firstDigit}");
-else 
-        Console.WriteLine("Числа равны");
+
+
