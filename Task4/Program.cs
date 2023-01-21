@@ -4,12 +4,11 @@
 ● 161 -> да */
 
 Console.WriteLine("Введите число: ");
-string number1 = Console.ReadLine();
-int numberOne = Convert.ToInt32(number1);
+int numberOne = Convert.ToInt32(Console.ReadLine());
 
 Console.Write(numberOne+" -> ");
 
-if (numberOne % (7*23) == 0)
+if (numberOne % 7 == 0 && numberOne % 23 == 0)
     Console.WriteLine("да");
 else Console.WriteLine("нет");
 
