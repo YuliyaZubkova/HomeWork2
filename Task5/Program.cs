@@ -3,4 +3,17 @@
 
 Console.WriteLine("Введите первое число: ");
 string number1 = Console.ReadLine();
-Console.Write(MakeArray(number, count));
+int numberOne = Convert.ToInt32(number1);
+
+Console.WriteLine("Введите второе число: ");
+string number2 = Console.ReadLine();
+int numberTwo = Convert.ToInt32(number2);
+
+if(numberOne * numberOne == numberTwo || numberTwo * numberTwo == numberOne)
+    {
+        Console.WriteLine("Да");
+        }
+else
+{
+    Console.WriteLine("Нет");
+}
