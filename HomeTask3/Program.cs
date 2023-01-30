@@ -3,12 +3,27 @@
 является ли этот день выходным. 
 6 -> да 7 -> да 1 -> нет */
 
-Console.WriteLine("Введите цифру, обозначающую день недели ");
-int number = Convert.ToInt32(Console.ReadLine());
 
-if (number < 1 || number > 7)
-    Console.WriteLine("Введите число от 1 до 7");
-else 
-    if (number == 6 || number == 7)
-        Console.WriteLine("Этот день является выходным.");
-    else Console.WriteLine("Этот день не является выходным");
+int GetNumber(string message)
+{
+    Console.WriteLine(message);
+    int number = Convert.ToInt32(Console.ReadLine());
+    return number;
+}
+
+void CheckDay(int number)
+{
+    if (number < 1 || number > 7)
+        Console.WriteLine("Введенное число не является днем недели.");
+    else
+        if (number == 6 || number == 7)
+        Console.WriteLine("Выходной");
+    else Console.WriteLine("День не является выходным");
+}
+
+int number = GetNumber("Введите цифру от 1 до 7");
+
+CheckDay(number);
+
+
+
